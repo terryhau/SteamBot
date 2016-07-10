@@ -717,6 +717,7 @@ namespace SteamBot
                 {
                     IsLoggedIn = false;
                     CloseTrade();
+                    GetUserHandler(SteamClient.SteamID).OnDisconnect();
                     Log.Warn("Disconnected from Steam Network!");
                 }
 

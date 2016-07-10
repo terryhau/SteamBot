@@ -154,7 +154,12 @@ namespace SteamBot
         /// Called when the bot is fully logged in.
         /// </summary>
         public abstract void OnLoginCompleted();
-       
+
+        /// <summary>
+        /// Called when the bot is disconnected.
+        /// </summary>
+        public virtual void OnDisconnect() { }
+
         /// <summary>
         /// Called whenever a user requests a trade.
         /// </summary>
